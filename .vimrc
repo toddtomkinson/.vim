@@ -21,7 +21,10 @@ syntax on
 set background=dark
 colorscheme solarized
 
-" chrome
+" Search
+Plugin 'kien/ctrlp.vim'
+
+" basic UI
 set number
 set ruler
 set listchars=tab:>-,eol:¶,nbsp:·,trail:·,precedes:·,extends:·
@@ -33,6 +36,9 @@ Plugin 'elzr/vim-json'
 
 " Salt
 Plugin 'saltstack/salt-vim'
+
+" Git
+Plugin 'tpope/vim-fugitive'
 
 " filetypes
 autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4
