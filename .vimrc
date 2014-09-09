@@ -18,6 +18,9 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 " powerline statusline plugin
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
+" completion plugins
+Plugin 'Valloric/YouCompleteMe'
+
 " Search
 Plugin 'kien/ctrlp.vim'
 
