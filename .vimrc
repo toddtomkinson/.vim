@@ -5,7 +5,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle
-" required! 
+" required!
 Plugin 'gmarik/vundle'
 
 " NERDTree for file browsing
@@ -14,6 +14,9 @@ let NERDTreeIgnore = ['\.pyc$', '\.git$', '.*\.swp$']
 let NERDTreeShowHidden=1
 Plugin 'jistr/vim-nerdtree-tabs'
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+" powerline statusline plugin
+Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 " Search
 Plugin 'kien/ctrlp.vim'
