@@ -15,26 +15,17 @@ let NERDTreeShowHidden=1
 Plugin 'jistr/vim-nerdtree-tabs'
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
-" powerline statusline plugin
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-
-" completion plugins
 Plugin 'Valloric/YouCompleteMe'
-
-" Search
+Plugin 'scrooloose/syntastic'
 Plugin 'kien/ctrlp.vim'
-
-" JSON
 Plugin 'elzr/vim-json'
-
-" Salt
 Plugin 'saltstack/salt-vim'
-
-" Git
 Plugin 'tpope/vim-fugitive'
-
 " Go Support (needs to go before the solarized plugin)
-Plugin 'fatih/vim-go'
+" TODO: Need to figure out how to make the go plugin play nicely with
+" YouCompleteMe and syntastic...
+" Plugin 'fatih/vim-go'
 
 " basic UI
 Plugin 'altercation/vim-colors-solarized'
