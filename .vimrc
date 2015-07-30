@@ -1,12 +1,12 @@
 set nocompatible               " be iMproved
 filetype off                   " required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required!
-Plugin 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 
 " NERDTree for file browsing
 Plugin 'scrooloose/nerdtree'
@@ -29,6 +29,8 @@ Plugin 'tpope/vim-fugitive'
 
 " basic UI
 Plugin 'altercation/vim-colors-solarized'
+call vundle#end()
+filetype plugin indent on     " required!
 syntax on
 set background=dark
 colorscheme solarized
@@ -49,5 +51,4 @@ autocmd Filetype css setlocal expandtab tabstop=2 shiftwidth=2
 autocmd Filetype javascript setlocal expandtab tabstop=4 shiftwidth=4
 autocmd Filetype go setlocal expandtab tabstop=4 shiftwidth=4 listchars=tab:\ \ ,eol:¶,nbsp:·,trail:·,precedes:·,extends:·
 
-filetype plugin indent on     " required!
 
