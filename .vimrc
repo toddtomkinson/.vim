@@ -43,6 +43,8 @@ set colorcolumn=80
 
 " filetypes
 autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4
+autocmd Filetype cpp setlocal expandtab tabstop=4 shiftwidth=4
+autocmd Filetype c setlocal expandtab tabstop=4 shiftwidth=4
 autocmd Filetype java setlocal expandtab tabstop=4 shiftwidth=4
 autocmd Filetype php setlocal expandtab tabstop=4 shiftwidth=4
 autocmd Filetype groovy setlocal expandtab tabstop=4 shiftwidth=4
@@ -51,4 +53,9 @@ autocmd Filetype css setlocal expandtab tabstop=2 shiftwidth=2
 autocmd Filetype javascript setlocal expandtab tabstop=4 shiftwidth=4
 autocmd Filetype go setlocal expandtab tabstop=4 shiftwidth=4 listchars=tab:\ \ ,eol:¶,nbsp:·,trail:·,precedes:·,extends:·
 
+" syntastic
+let g:syntastic_always_populate_loc_list=1
 
+let g:EclimFileTypeValidate=0
+let g:EclimJavaValidate=0
+let g:EclimCompletionMethod = 'omnifunc'
